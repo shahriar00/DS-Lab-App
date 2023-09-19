@@ -1,4 +1,0 @@
-#Tue Sep 19 17:21:45 BDT 2023
-base.0=F\:\\DS Lab Project\\ds_lab\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
