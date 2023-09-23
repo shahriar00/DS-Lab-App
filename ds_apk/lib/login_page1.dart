@@ -66,6 +66,7 @@ items: const [
 BottomNavigationBarItem(icon: Icon(Icons.home,),
 label: 'Home',
 backgroundColor: Color.fromARGB(255, 32, 72, 149),
+
 ),
 BottomNavigationBarItem(icon: Icon(Icons.event,),
 label: 'Event',
