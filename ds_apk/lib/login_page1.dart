@@ -39,18 +39,17 @@ int My_index =0;
         ],
       )
       ),   
-      body: SingleChildScrollView(
-         child: Column(
-          children: [       
-            ClipPath(
-              clipper: Customclippath(),
-              child: Container(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                color: const Color.fromARGB(255, 32, 72, 149),
-              ),
+      body: ClipPath(
+        clipper: Customclippath(),
+        child: Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          color: const Color.fromARGB(255, 32, 72, 149),
+          child:const SingleChildScrollView(
+            child: Column(
+              children: [],
             ),
-          ],
+          ),
         ),
       ),
 bottomNavigationBar: BottomNavigationBar(
