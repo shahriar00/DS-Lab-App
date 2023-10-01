@@ -54,6 +54,7 @@ int My_index =0;
       ),
 bottomNavigationBar: BottomNavigationBar(
   type: BottomNavigationBarType.shifting,
+  elevation: 0,
   onTap: (index){
     setState(() {
       My_index = index;
@@ -99,12 +100,12 @@ class Customclippath extends CustomClipper<Path> {
   @override
   Path getClip(Size size) { 
     Path path = Path();
-    path.moveTo(size.width*-0.0010000,size.height*0.1362857);
-    path.lineTo(size.width*0.0008333,size.height*1.0042857);
-    path.lineTo(size.width*0.9991667,size.height*0.9971429);
-    path.lineTo(size.width*0.9991667,size.height*0.0028571);
-    path.lineTo(size.width*0.9995000,size.height*0.1068571);
-    path.lineTo(size.width*0.1435000,size.height*0.2154286);
+    path.moveTo(size.width*0.0005000,size.height*0.1994286);
+    path.lineTo(size.width*-0.0048333,size.height*1.0014286);
+    path.lineTo(size.width*1.0008333,size.height*1.0028571);
+    path.lineTo(size.width*1.0023333,size.height*0.1414286);
+    path.lineTo(size.width*0.1670000,size.height*0.2880000);
+
     return path;
   }
 
