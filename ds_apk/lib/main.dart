@@ -1,4 +1,4 @@
-import 'package:ds_apk/login_page1.dart';
+import 'package:ds_apk/Login%20Pages/profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
