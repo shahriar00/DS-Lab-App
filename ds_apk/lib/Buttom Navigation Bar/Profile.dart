@@ -7,24 +7,19 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: 
-        ClipPath(
-      clipper: Customclippath(),
-
-      child:  Container(
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        color: const Color.fromARGB(255, 32, 72, 149),
-        
-        child: Center(
-
-
-            child: Stack(
-          children: [
-            Positioned(
-              left: 9,
-              top: 205,
-              child: SizedBox(
+        body: ClipPath(
+            clipper: Customclippath(),
+            child: Container(
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
+              color: const Color.fromARGB(255, 32, 72, 149),
+              child: Center(
+                  child: Stack(
+                children: [
+                  Positioned(
+                    left: 9,
+                    top: 205,
+                    child: SizedBox(
                       width: 239,
                       height: 39,
                       child: Text(
@@ -41,20 +36,15 @@ class ProfilePage extends StatelessWidget {
                           color: const Color.fromARGB(255, 255, 255, 255),
                           fontSize: 28,
                           fontFamily: 'Jost-VariableFont_wght',
-                    fontWeight: FontWeight.w600,
-                    height: 0,
+                          fontWeight: FontWeight.w600,
+                          height: 0,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-            ),
-          ],
-          
-        )
-        
-        ),
-      ),
-      
-    ));
+                ],
+              )),
+            )));
   }
 
   //////
