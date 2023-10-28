@@ -1,4 +1,5 @@
-import 'package:ds_apk/Login%20Pages/profile.dart';
+
+import 'package:ds_apk/Buttom%20Navigation%20Bar/buttomNavigation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(title: 'title'),
+      home: MyButtomNavBar(title: '',),
     );
   }
 }

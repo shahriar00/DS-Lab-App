@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+
+class EventPage extends StatelessWidget {
+  const EventPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  const Scaffold(
+      body: Center(
+        child:  Stack(
+                children: [
+                  SizedBox(
+                    child: Text('Event Page',
+                    style: TextStyle(fontSize: 40),
+                    ),
+                    
+                  )
+                ],
+              )
+      ),
+    );
+  }
+}
