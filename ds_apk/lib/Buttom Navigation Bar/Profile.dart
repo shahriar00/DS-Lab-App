@@ -7,15 +7,18 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     // backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-        body: ClipPath(
+        body: 
+        ClipPath(
       clipper: Customclippath(),
 
       child:  Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         color: const Color.fromARGB(255, 32, 72, 149),
+        
         child: Center(
+
+
             child: Stack(
           children: [
             Positioned(
@@ -45,9 +48,14 @@ class ProfilePage extends StatelessWidget {
               ),
             ),
           ],
-        )),
+          
+        )
+        
+        ),
       ),
       
     ));
   }
+
+  //////
 }
