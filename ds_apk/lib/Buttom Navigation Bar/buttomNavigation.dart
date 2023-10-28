@@ -28,7 +28,7 @@ class _MyButtomNavBarState extends State<MyButtomNavBar> {
           preferredSize: const Size.fromHeight(50),
           child: AppBar(
             elevation: 0,
-           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+            backgroundColor: const Color.fromARGB(255, 255, 255, 255),
             actions: [
               Image.asset(
                 "asset/Images/ds.png",
@@ -52,21 +52,17 @@ class _MyButtomNavBarState extends State<MyButtomNavBar> {
               )
             ],
           )),
-       backgroundColor: const Color.fromARGB(255, 32, 72, 149),
+      backgroundColor: const Color.fromARGB(255, 32, 72, 149),
       bottomNavigationBar: Container(
-        
         margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        
-        decoration: BoxDecoration(boxShadow: 
-        [BoxShadow(
+        decoration: BoxDecoration(boxShadow: [
+          BoxShadow(
               color: const Color.fromARGB(255, 32, 72, 149).withOpacity(0.5),
               blurRadius: 25,
               offset: const Offset(8, 20))
         ]),
         child: ClipRRect(
-          
           borderRadius: BorderRadius.circular(30),
-          
           child: BottomNavigationBar(
               backgroundColor: const Color.fromARGB(255, 32, 72, 149),
               selectedItemColor: const Color.fromARGB(255, 32, 72, 149),
@@ -77,7 +73,6 @@ class _MyButtomNavBarState extends State<MyButtomNavBar> {
                   myCurrentIndex = index;
                 });
               },
-              
               items: const [
                 BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
                 BottomNavigationBarItem(
@@ -87,9 +82,7 @@ class _MyButtomNavBarState extends State<MyButtomNavBar> {
                     icon: Icon(Icons.group), label: "DS Club"),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.person_outline), label: "Profile"),
-              ]
-            
-              ),
+              ]),
         ),
       ),
       body: pages[myCurrentIndex],
